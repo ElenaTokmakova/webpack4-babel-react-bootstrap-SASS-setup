@@ -69,7 +69,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     //Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload.
     new webpack.NoEmitOnErrorsPlugin(),
-    //se the NoEmitOnErrorsPlugin to skip the emitting phase whenever there are errors while compiling. 
+    //Use the NoEmitOnErrorsPlugin to skip the emitting phase whenever there are errors while compiling. 
     //This ensures that no assets are emitted that include errors. The emitted flag in the stats is false for all assets.
     new webpack.NamedModulesPlugin(),
     //This plugin will cause the relative path of the module to be displayed when HMR is enabled. Suggested for use in development.
