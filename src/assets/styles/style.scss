@@ -1,0 +1,137 @@
+$freeCodeCampGreen: #006400;
+$freeCodeCampRed: #FF4025;
+$freeCodeCampPurple: #BA68C8;
+$freeCodeCampGrey: #E0E0E0;
+$freeCodeCampDarkGrey: #939393;
+$silvergrey:  #eeeeee;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: $freeCodeCampDarkGrey;
+}
+
+body {
+
+	.container {
+		background-color: $freeCodeCampGrey;
+		margin: 20px auto;
+		border-radius: 10px;
+		box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+		table {
+			border: 1px solid #351f0b;	
+			i {
+				font-size: 2em;
+			}
+			.clickable {
+				cursor: pointer;
+				text-decoration: underline;
+			}	
+		}
+	}
+
+	.icon {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+  }
+  
+  h1 {
+    padding: 20px;
+  }
+
+	h2 {
+		color: $freeCodeCampPurple;
+		text-align: center;
+		padding: 20px 5px;
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+}
+
+header, footer {
+	text-align: center;
+	color: $silvergrey;
+	background-color: $freeCodeCampGreen;
+	width: 100%;
+	
+}
+
+header{ 
+   height: 150px;	
+   margin-bottom: 20px;
+   img {
+		display: block;
+		margin: 0 auto;
+		padding: 20px 0;
+   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: content;
+	height: 120px;
+	padding: 20px 5px;
+	p {
+		line-height: 2em;
+		a, a:hover {
+			color: $silvergrey;
+			text-decoration: none;
+		}
+	}
+
+	& ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    width: 100%;  
+    padding:0;
+    margin: 0;
+    & li {
+      display: inline;     
+      margin: 0 5px;                 
+        & a {        
+        font-weight:400;
+        color: #fff;              
+        display:inline-block;
+        text-decoration:none; 
+        margin-bottom: 10px;  
+        border:solid 2px #fff; 
+        border-radius:50%;        
+        width:50px;
+        height:50px;
+        text-align:center;
+        font-size:20px;
+        line-height:48px;
+        transition:all .3s ease-in-out;
+            &:hover {
+              transform: scale(1.2);
+              color: #fff;
+              border:solid 2px #fff; 
+            }        
+            &.linkedin:hover {
+              background: #007bb6;                  
+            }
+            &.personal-website:hover {
+              background: #79b044;
+            }
+            &.facebook:hover {
+              background: #3b5998;
+            }
+            &.github:hover {
+              background: #24292e;;
+            }
+            &.freecodecamp:hover {
+              background: #006400;
+            }
+            &.codepen:hover {
+              background: #722872;
+            }                    
+        }
+      }
+    }
+}
